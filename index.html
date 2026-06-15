@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eco-Survival: Remastered</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="app-container">
+        <!-- HEADER / HUD -->
+        <header class="hud">
+            <div class="hud-top">
+                <div class="day-tracker">
+                    <span id="day-icon">☀️</span> 
+                    <span id="day-text">Day 1: Morning</span>
+                </div>
+                <div class="status-indicators">
+                    <div class="stat-group">
+                        <label>💰 Wallet</label>
+                        <div class="stat-value" id="val-money">$30.00</div>
+                        <progress id="bar-money" value="30" max="50"></progress>
+                    </div>
+                    <div class="stat-group">
+                        <label>😊 Comfort</label>
+                        <div class="stat-value" id="val-comfort">100%</div>
+                        <progress id="bar-comfort" value="100" max="100"></progress>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- MAIN GAMEPLAY AREA -->
+        <main id="game-stage" class="stage">
+            
+            <!-- Scenario Card -->
+            <div class="card scenario-card">
+                <h2 id="scenario-title">Current Situation</h2>
+                <p id="scenario-desc">Loading...</p>
+            </div>
+
+            <!-- Interaction Area -->
+            <div class="options-grid" id="options-container">
+                <!-- Cards injected by JS -->
+            </div>
+
+        </main>
+
+        <!-- GAME LOG (History) -->
+        <section class="game-log">
+            <h3>📝 Event Log</h3>
+            <ul id="log-list">
+                <li>Welcome to the Eco-Challenge!</li>
+            </ul>
+        </section>
+
+        <!-- GAME OVER OVERLAY (Hidden by default) -->
+        <div id="overlay" class="overlay hidden">
+            <div class="overlay-content">
+                <h1 id="end-title">Game Over</h1>
+                <p id="end-desc">Result description here.</p>
+                <div class="final-stats">
+                    <span>End Funds: <b id="end-money">$0</b></span>
+                    <span>End Comfort: <b id="end-comfort">0%</b></span>
+                </div>
+                <button class="btn-restart" onclick="resetGame()">Try Again ↺</button>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
