@@ -6,3 +6,8 @@ Make Choices: Click an option button to take an action based on your current bud
 Check the Log: Watch the event log at the bottom to see your previous actions and costs.
 
 Survive 3 Days: Keep both stats above zero until the end of Day 3 to win the game.
+
+
+***IMPORTANT***
+Do not download the index.html, script.js or style.css file alone, it will not work correctly.
+For it to work, you will need to download the zip file, unzip it and then run the HTML file
