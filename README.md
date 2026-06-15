@@ -11,3 +11,11 @@ Survive 3 Days: Keep both stats above zero until the end of Day 3 to win the gam
 ***IMPORTANT***
 Do not download the index.html, script.js or style.css file alone, it will not work correctly.
 For it to work, you will need to download the zip file, unzip it and then run the HTML file
+
+-or-
+
+You can run it through this link: https://harveer-rupyal.github.io/Eco-Game/
+*this will not work for offline use, if this file is needed to be ran offline use the first option
+
+LINK:
+# https://harveer-rupyal.github.io/Eco-Game/
